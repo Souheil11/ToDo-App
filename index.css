@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(203, 193, 193);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+main{
+    width: 80%;
+    background-color:darkslategray;
+    margin: 5rem auto ;
+    text-align: center;
+    color: darkgrey;
+    border-radius: 5px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+header h1{
+    margin: 1rem;
+    color: white;
+    letter-spacing: 9px;
+    
+}
+
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0px 5px 5px rgb(53, 49, 49);    
+} 
+
+.input-container input{
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem;
+    width: 60%;
+    padding: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.input-container span{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.input-container span:hover{
+color: aliceblue;
+  }
+
+.tasks-container{
+
+    background-color: honeydew;
+    min-height: 6rem;
+    padding: 1rem;
+}
+
+.tasks-container h1{
+
+font-size: 22px;
+
+}
+
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkgrey;
+    padding: 1rem;
+    text-align: justify;
+    min-height: 70px;
+    position: relative;
+}
+
+.task p{
+    position: absolute;
+    bottom: 7px;
+    line-height: 0;
+    font-size: 11px;
+}
+
+.task:hover{
+    background-color: rgb(235, 235, 235);
+    border-top: none;
+    border: 1px solid darkgrey !important;
+    margin-top: -1px;
+}
+
+.task:last-child{
+    border: none;
+}
+
+.action-buttons{
+
+    display: flex;
+    gap: 1rem;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+    user-select: none;
+}
+
+#completed:hover{
+    color: green;
+}
+
+#delete:hover{
+    color: red;
+}
+
+#edit:hover{
+    color: blue;
+}
